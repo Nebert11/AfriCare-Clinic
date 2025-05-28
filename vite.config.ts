@@ -8,4 +8,14 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   base: '/africare-clinic/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
+  }
 });
